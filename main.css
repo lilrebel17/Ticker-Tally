@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@600&display=swap');
+
+body, html {
+    margin: 0;
+    color: white;
+    background-color:#005CCC;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    text-align: center;
+    font-size: 2vw;
+}
+.main-container {
+    background-color:#0049A3;
+    width: 90vw;
+    margin-left: 5vw;
+    overflow: hidden;
+    display:grid;
+    grid-template-columns: 4 auto;
+    grid-template-rows: 3 auto;
+}
+.buttons{
+    background-color: transparent;
+    height:100%;
+    font-size: 7vw;
+    color: white;
+    border: none;
+}
+.down-counter {
+    grid-column: 1;
+    grid-row: 1/3;
+    text-align: center;
+    border-right: medium solid #005CCC;
+}
+.up-counter {
+    grid-column: 4;
+    grid-row: 1/3;
+    text-align: center;
+    border-left: medium solid #005CCC;
+}
+.counter-container {
+    grid-column: 2/4;
+    grid-row: 1;
+}
+.interval-container {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    border-top: medium solid #005CCC;
+    text-align: center;
+    font-size: 2vw;
+}
+.interval-container input{
+    text-align: center;
+    background: none;
+    border-style:inset;
+    border-color:#005CCC;
+    border-bottom:medium solid #0049A3;
+    font-size: 2vw;
+    color: white;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+}
+.interval-container input:focus {
+    outline: none;
+}
+.counter {
+    font-size: 10vw;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Counter Clicker</title>
+        <!-- Links to sheets. -->
+        <link rel='stylesheet' href='main.css'>
+        <!-- Force IE 8/9/10 to use its latest rendering engine -->
+        <!-- Internet Explorer -->
+        <meta http-equiv='x-ua-compatible' content='ie=edge'>
+    </head>
+
+    <body>
+        <header><h1>Tally Counter</h1>
+        <p>Count by any interval!</p></header>
+        <div class='main-container'>
+            <button class="down-counter buttons">
+                <p>-</p>
+            </button>
+                <div class="counter-container">
+                    <p class="counter"></p>
+                </div>
+                <div class="interval-container">
+                    <form  onSubmit="return false">
+                    <p>Interval</p>
+                    <input type="number" id="interval" name="interval" min='1'>
+                    </form>
+                </div>
+            <button class='up-counter buttons'>
+                    <p>+</p>
+            </button>
+        </div>
+        <!-- Link JS Below -->
+        <script src='index.js'></script>
+    </body>
+</html>
